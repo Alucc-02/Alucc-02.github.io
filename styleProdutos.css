@@ -1,0 +1,240 @@
+/*Faça um comentário*/
+
+/*Corpo geral*/
+*{
+    box-sizing: border-box;
+}
+
+span.red{
+    color:red;
+}
+
+body{
+    
+    color: white;
+    background-color: black;
+}
+
+a:hover{
+    color: red;
+}
+/*Corpo geral*/
+
+/*Cabeçalho*/
+.header{
+    border: 1px solid red;
+    padding: 5px;
+    width: 100%;
+}
+
+.siteLogo{
+    width: 241px;
+    height: 104px;
+    margin-left: 32px;
+}
+
+.navCab{
+    width: 100%;
+    float: left;
+    border: 1px solid red;
+    padding: 0px;
+}
+
+.navCab ul{
+    list-style: none;
+}
+
+.topN{
+    float: left;
+}
+
+.topN a{
+    display: block;
+    padding-bottom:16px;
+    padding-left: 16px;
+    margin-left: 32px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.topN a:hover{
+    color:red;
+}
+/*Cabeçalho*/
+
+/*Sessão principal*/
+.container {
+    width: 100%;
+    padding: 5px;
+    /* important */
+    display: flex;
+    /* important */
+    align-items: stretch;
+    justify-content: space-around;
+    border: 1px solid red;
+    
+  }
+
+/*Main*/
+  .main{
+    width: 80%;
+    /* optional */
+    min-height: 100%;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  @media(max-width:800px){
+
+    .container{
+      display:flex;
+      flex-direction: column;
+      max-width: 100%;
+  
+    }
+    .main,.navAside{
+      flex-direction: column; 
+    }
+  
+    .navAside ul, .main ul li{
+      flex-direction: column;
+    }
+  
+    .main figure, .main div{
+      flex-direction: column;
+    }
+  }
+
+  @media(max-width:600px){
+
+    .container{
+      display:flex;
+      flex-direction: column;
+      max-width: 100%;
+  
+    }
+    .main,.navAside{
+      flex-direction: column; 
+    }
+  
+    .navAside ul, .main ul li{
+      flex-direction: column;
+    }
+  
+    .main figure, .main div{
+      flex-direction: column;
+    }
+  }
+
+  .loja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .prodT{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .fig{
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    width: 300px;
+    height: 355px;
+  }
+
+  .bo img{
+    width: 200px;
+    height: 250px;
+    justify-content: center;
+  }
+
+  .boardgame img{
+    width: 206px;
+    height: 230px;
+    justify-content: center;
+  }
+  
+  .bonecohb img{        
+    width: 193px;
+    height: 237px;
+    justify-content: center;
+  }
+
+  .bonecoabe img{
+    width: 141px;
+    height: 216px;
+    justify-content: center;
+  }
+
+  .camisetahb img{
+    width: 225px;
+    height: 246px;
+    justify-content: center;
+  }
+/*Main*/
+
+/*Navegação lateral*/
+.navAside{
+  width: 20%;
+  /* optional */
+  min-height: 100%;
+  border: 1px solid red;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navAside a:hover{
+  color:red;
+}
+
+.asidetit{
+  text-align: center;
+}
+
+.asideul, .asideul a{
+  text-decoration: none;
+  color: white;
+  list-style: square;
+}
+
+.asideul li{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+/*Navegação lateral*/
+
+/*Sessão principal*/
+
+/*Rodapé*/
+.footer{
+    padding-right: 50px;
+    padding-left: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid red;
+    font-size: 15px;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer ul{
+    list-style: none;
+    font-size: 12px;
+}
+
+.footer li{
+    display: inline;
+}
+
+/*Rodapé*/

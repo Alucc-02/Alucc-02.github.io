@@ -1,0 +1,234 @@
+/*Faça um comentário*/
+
+/*Corpo geral*/
+*{
+    box-sizing: border-box;
+    
+}
+
+span.red{
+    color:red;
+}
+
+body{
+    
+    color: white;
+    background-color: black;
+}
+/*Corpo geral*/
+
+/*Cabeçalho*/
+.header{
+    border: 1px solid red;
+    padding: 5px;
+    width: 100%;
+}
+
+.siteLogo{
+    width: 241px;
+    height: 104px;
+    margin-left: 32px;
+}
+
+.navCab{
+    width: 100%;
+    float: left;
+    border: 1px solid red;
+    padding: 0px;
+}
+
+.navCab ul{
+    list-style: none;
+}
+
+.topN{
+    float: left;
+}
+
+.topN a{
+    display: block;
+    padding-bottom:16px;
+    padding-left: 16px;
+    margin-left: 32px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.topN a:hover{
+    color:red;
+  }
+/*Cabeçalho*/
+
+/*Sessão principal*/
+.container {
+    width: 100%;
+    padding: 5px;
+    /* important */
+    display: flex;
+    /* important */
+    align-items: stretch;
+    justify-content: space-around;
+    border: 1px solid red;
+    
+  }
+
+/*Main*/
+  .main{
+    width: 80%;
+    /* optional */
+    min-height: 100%;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  @media(max-width:800px){
+
+    .container{
+      display:flex;
+      flex-direction: column;
+      max-width: 100%;
+  
+    }
+    .main,.navAside{
+      
+      flex-direction: column; 
+    }
+  
+    .navAside ul, .main ul li{
+      flex-direction: column;
+    }
+  
+    .main figure, .main div{
+      flex-direction: column;
+    }
+  }
+  
+  @media(max-width:600px){
+  
+    .container{
+      display:flex;
+      flex-direction: column;
+      max-width: 100%;
+  
+    }
+    .main,.navAside{
+      flex-direction: column; 
+    }
+  
+    .navAside ul, .main ul li{
+      flex-direction: column;
+    }
+  
+    .main figure, .main div{
+      flex-direction: column;
+    }
+  }
+
+  .titMain{
+    padding-left: 20px;
+  }
+
+  .perguntas{
+    border: 1px solid red;
+    padding: 25px;
+    margin: 10px;
+  }
+
+  .perguntas section{
+    border: 1px solid red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+  }
+
+  .formularioP{
+    border: 1px solid red;
+    
+    margin: 10px;
+  }
+
+  .titForm{
+    text-align: center;
+    border: 1px solid red;
+    margin: 25px;
+  }
+
+  .formula{
+    border: 1px solid red;
+    margin: 25px;
+
+  }
+  .coisa{
+    margin: 20px;
+  }
+
+  #butao{
+    margin-left: 130px;
+    margin-bottom: 40px;
+  }
+/*Main*/
+
+/*Navegação lateral*/
+  .navAside{
+    width: 20%;
+    /* optional */
+    min-height: 100%;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .navAside a:hover{
+    color:red;
+  }
+  
+  .asidetit{
+    text-align: center;
+  }
+
+  .asideul, .asideul a{
+    text-decoration: none;
+    color: white;
+    list-style: square;
+}
+
+.asideul li{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*Navegação lateral*/
+
+/*Sessão principal*/
+
+/*Rodapé*/
+.footer{
+    padding-right: 50px;
+    padding-left: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid red;
+    font-size: 15px;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer ul{
+    list-style: none;
+    font-size: 12px;
+}
+
+.footer li{
+    display: inline;
+}
+
+/*Rodapé*/
